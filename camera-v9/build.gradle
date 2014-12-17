@@ -3,13 +3,11 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.12.+'
-        classpath 'com.github.dcendents:android-maven-plugin:1.0'
+        classpath 'com.android.tools.build:gradle:1.0.0'
     }
 }
 
-apply plugin: 'android-library'
-apply plugin: 'android-maven'
+apply plugin: 'com.android.library'
 
 version '0.6.10'
 group 'com.commonsware.cwac'
@@ -20,8 +18,7 @@ repositories {
 
 dependencies {
     compile project(':camera')
-    compile 'com.android.support:support-v4:18.0.+'
-    compile 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
+    compile 'com.android.support:support-v4:21.0.+'
 }
 
 android {
